@@ -1,11 +1,10 @@
 def main():
-  # print("Keep it logically awesome.")
+    print("Quotes")
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
-
-  #print(quotes)
-
-if __name__== "__main__":
-  main()
+if __name__ == "__main__":
+    with open("quotes.txt", "r") as f:
+        quotes = f.readlines()
+        for quote in quotes:
+            print(quote.strip())
+    
+    main()
